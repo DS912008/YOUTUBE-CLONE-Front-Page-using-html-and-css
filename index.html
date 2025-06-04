@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color:rgb(11, 10, 10);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .logo {
+            font-size: 30px;
+            font-family: "Georgia", serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            background-color: #1c1c1c;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            padding: 5px 5px;
+            width: 50%;
+        }
+        .search-container input {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+        .search-container input::placeholder {
+            color: #888;
+        }
+        .button {
+            background-color: #2a2a2a;
+            border: none;
+            color: white;
+            padding: 11px 15px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin-left: -8%;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .create {
+            border-radius: 20px;
+            padding: 10px 15px;
+            background-color: #2a2a2a;
+            margin: 0 5px;
+            color: white;
+        }
+        image {
+            border-radius: 50%;
+            color: white;
+        }
+        
+        .content {
+            display: flex;
+            gap: 40px;
+            padding: 20px;
+            margin-top: -20px;
+        }
+        
+
+        .video-grid {
+            display: grid;
+          grid-template-areas:
+  'v1 v1 v1 v1 v1  v2 v2 v2 v2 v2  v3 v3 v3 v3 v3'
+  'v4 v4 v4 v4 v4  v5 v5 v5 v5 v5  v6 v6 v6 v6 v6';
+  
+            gap: 60px;
+            padding: 10px 20px;
+        }
+        .video-card {
+            background-color:rgb(11, 10, 10);
+            border-radius: 20px;
+            padding: 15px;
+            color: white;
+        }
+        .video-card img {
+        height: 300px;
+            width: 400px;
+        border-radius: 10px;
+        }
+        .title {
+            font-size: 16px;
+            margin: 10px 0 5px;
+            font-weight: 600;
+        }
+        .channel-name, .views-time {
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <image src="YU.png" alt="YouTube Logo" class="logo-img"></image> YouTube
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+        </div>
+        <button class="button">🔍</button>
+        <div class="user-menu">
+            <button class="create"><strong>+</strong>Create</button>
+        </div>
+        <image src="R.png"></image>
+        <image src="D.png"></image>
+    </header>
+
+    <div class="content">
+        <div class="sidebar">
+            <div><img src="H.png" alt="Home"> <br><span>Home</span></div> <br> <br>
+            <div><img src="S.png" alt="Shortz"> <br> <span>Shortz</span></div> <br> <br>
+            <div><img src="SU.png" alt="Subscriptions"> <br> <span>Subscriptions</span></div> <br> <br>
+            <div><img src="Y.png" alt="You"> <br> <span>You</span></div> <br> <br>
+            <div><img src="T.png" alt="History"> <br> <span>History</span></div>
+        </div>
+        <main>
+            <div class="video-grid">
+                <div class="video-card" style="grid-area: v1;" width="200px" height="200px">
+                    <img src="https://i.ytimg.com/vi/VTqnhAOZz_I/hqdefault.jpg" alt="Video 1"  height="300">
+                    <div class="title">Mere Sultan - Episode 101</div>
+                    <div class="channel-name">Dhanu Shree</div>
+                    <div class="views-time">16M views • 2 years ago</div>
+                </div>
+                <div class="video-card" style="grid-area: v2;" width="200px" height="200px">
+                    <img src="https://i.ytimg.com/vi/D4AIUmD8qZ8/hqdefault.jpg" alt="Video 2"  height="300">
+                    <div class="title">Wednesday Season 2 First 6 Minutes</div>
+                    <div class="channel-name">Netflix</div>
+                    <div class="views-time">4.9M views • 3 days ago</div>
+                </div>
+                <div class="video-card" style="grid-area: v3;">
+                    <img src="https://i.ytimg.com/vi/rqsxDFFVEco/hqdefault.jpg" alt="Video 3">
+                    <div class="title">Forgotten Queens Before Elizabeth I</div>
+                    <div class="channel-name">Royal Stories UK</div>
+                    <div class="views-time">298 views • 2 days ago</div>
+                </div>
+                <div class="video-card" style="grid-area: v4;">
+                    <img src="https://i.ytimg.com/vi/PqHOI3kD8t4/hqdefault.jpg" alt="Video 4">
+                    <div class="title">Mr. & Mrs. Agreste Interview</div>
+                    <div class="channel-name">TVI</div>
+                    <div class="views-time">1.3K views • 1 week ago</div>
+                </div>
+                <div class="video-card" style="grid-area: v5;">
+                    <img src="https://i.ytimg.com/vi/edstROWiVmU/hqdefault.jpg" alt="Video 5">
+                    <div class="title">Konuşsana Dilini Mi Yuttun?</div>
+                    <div class="channel-name">Dizi Channel</div>
+                    <div class="views-time">2.2M views • 1 year ago</div>
+                </div>
+                <div class="video-card"     style="grid-area: v6;">
+                    <img src="https://i.ytimg.com/vi/TZac66D8G-Y/hqdefault.jpg" alt="Video 6">
+                    <div class="title">Save or Push - Minecraft Challenge</div>
+                    <div class="channel-name">BlockWorld</div>
+                    <div class="views-time">5.6M views • 3 weeks ago</div>
+                </div>
+               
+        </main>
+    </div>
+</body>
+</html>
